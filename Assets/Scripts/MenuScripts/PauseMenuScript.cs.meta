@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1c2028658c2d43f4eb18b6830b5aaacb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DarkMenuObj: {fileID: 176623919055441196, guid: dee50168210e73f4ca6eb7b3338baec1, type: 3}
+  - SettingsMenuObj: {fileID: 1950939540471620655, guid: 9aded3c45abd95044b9246741b87e007, type: 3}
+  - PauseMenuObj: {fileID: 8692747186355068169, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
