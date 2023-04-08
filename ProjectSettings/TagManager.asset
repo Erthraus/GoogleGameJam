@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1397272359
+    locked: 0
+  - name: Midground
+    uniqueID: 2489903959
+    locked: 0
+  - name: HUD 1
+    uniqueID: 4162555155
+    locked: 0
+  - name: HUD 2
+    uniqueID: 1467666287
+    locked: 0
+  - name: HUD 3
+    uniqueID: 3164197245
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 97593069
+    locked: 0
