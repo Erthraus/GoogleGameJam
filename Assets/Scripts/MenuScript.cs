@@ -31,6 +31,11 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public void NewProjectButton()
+    {
+        SceneManager.LoadScene(5);
+    }
+
     public void QuitButton()
     {
         Application.Quit();
