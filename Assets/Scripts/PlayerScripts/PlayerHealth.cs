@@ -39,8 +39,6 @@ public class PlayerHealth : MonoBehaviour
         }
         anim.SetBool("isDead", isDead);
         
-        ReloadSceneforTest();
-
 
     }
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -103,13 +101,7 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
-    void ReloadSceneforTest()
-    {
-        if (Input.GetKey(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
-        }
-    }
+    
   
     //IEnumerator DontMove()
     //{
