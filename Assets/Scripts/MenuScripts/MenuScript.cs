@@ -7,32 +7,37 @@ public class MenuScript : MonoBehaviour
 {
     public void MainMenuButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void ProjectsButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MM-Projects");
     }
 
     public void SettingsButton()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MM-Settings");
     }
 
     public void CreditsButton()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("MM-Credits");
     }
 
     public void GameMenuButton()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Game Menu");
     }
 
     public void NewProjectButton()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("In-Game");
+    }
+
+    public void SceneSelectButton()
+    {
+        SceneManager.LoadScene("Scene Select Menu");
     }
 
     public void QuitButton()
