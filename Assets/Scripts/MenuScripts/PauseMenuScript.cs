@@ -1,25 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PauseMenuScript : MonoBehaviour
 {
-
-    /*Resume butonu hatalý çalýþýyor, ilk kullanýmdan sonra
-    ESC'nin time scale komutunu bozuyor hatta tersine çeviriyor,
-    tekrar Return butonu kullanýldýktan sonra ESC eski iþlevine dönüyor.
-    Sadec ESC kullanýldýðýnda bir sorun çýkmýyor.*/
-
     public GameObject DarkMenuObj;
     public GameObject SettingsMenuObj;
     public GameObject PauseMenuObj;
     public bool Paused;
 
 
-
 void Start()
     {
+        Time.timeScale = 1.0f;
         Paused = false;
         DarkMenuObj.SetActive(false);
         SettingsMenuObj.SetActive(false);
@@ -37,16 +32,22 @@ void Update()
             else if (Paused == true)
                 EscButtonResume();
         }
+
     }
 
-public void ResumeButton()
+/*public void ResumeButton()
     {
         Paused = false;
         Time.timeScale = 1.0f;
         DarkMenuObj.SetActive(false);
         SettingsMenuObj.SetActive(false);
         PauseMenuObj.SetActive(false);
-    } 
+    } */
+
+public void RestartButton()
+    {
+        SceneManager.LoadScene(6);
+    }
 
 public void EscButtonPause()
     {

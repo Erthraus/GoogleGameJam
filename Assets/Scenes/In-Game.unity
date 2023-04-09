@@ -12184,6 +12184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8692747186344997767, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_text
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 8692747186355068169, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -12288,10 +12292,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 394176933}
+    - target: {fileID: 8692747186675769809, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartButton
+      objectReference: {fileID: 0}
     - target: {fileID: 8692747186785934078, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 394176934}
+    - target: {fileID: 8692747186849637224, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692747186849637224, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692747187102187101, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692747187102187101, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692747187102187101, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8692747187163454992, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
       propertyPath: m_SizeDelta.y
       value: 53
