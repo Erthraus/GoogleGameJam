@@ -11,6 +11,7 @@ public class PauseMenuScript : MonoBehaviour
     public GameObject PauseMenuObj;
     public GameObject DieMenuObj;
     public bool Paused;
+    public bool isDead;
     public Scene _scene;
 
 
@@ -23,6 +24,7 @@ void Start()
     {
         Time.timeScale = 1.0f;
         Paused = false;
+        isDead = false;
         DarkMenuObj.SetActive(false);
         SettingsMenuObj.SetActive(false);
         PauseMenuObj.SetActive(false);
@@ -31,7 +33,7 @@ void Start()
 
 void Update()
     {
-        
+        if(isDead == false)
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (Paused == false)
@@ -86,5 +88,9 @@ public void BackButton()
         SettingsMenuObj.SetActive(false);
     }
 
+/*public void WinTrigger()
+    {
+
+    }*/
 
 }
