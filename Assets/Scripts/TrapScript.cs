@@ -15,7 +15,7 @@ public class TrapScript : MonoBehaviour
     {
         _scene = SceneManager.GetActiveScene();
     }
-/*private void OnTriggerEnter2D(Collider2D other)
+private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -25,5 +25,5 @@ public class TrapScript : MonoBehaviour
             DieMenuObj.SetActive(true);
         }
     
-    }*/
+    }
 }
