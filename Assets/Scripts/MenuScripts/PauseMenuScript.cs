@@ -9,8 +9,15 @@ public class PauseMenuScript : MonoBehaviour
     public GameObject DarkMenuObj;
     public GameObject SettingsMenuObj;
     public GameObject PauseMenuObj;
+    public GameObject DieMenuObj;
     public bool Paused;
+    public Scene _scene;
 
+
+public void Awake()
+    {
+        _scene = SceneManager.GetActiveScene();
+    }
 
 void Start()
     {
@@ -19,6 +26,7 @@ void Start()
         DarkMenuObj.SetActive(false);
         SettingsMenuObj.SetActive(false);
         PauseMenuObj.SetActive(false);
+        DieMenuObj.SetActive(false);
     }
 
 void Update()
@@ -46,7 +54,7 @@ void Update()
 
 public void RestartButton()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(_scene.buildIndex );
     }
 
 public void EscButtonPause()
