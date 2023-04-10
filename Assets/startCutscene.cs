@@ -14,7 +14,7 @@ public class startCutscene : MonoBehaviour
         {
             pc.playerSpeed = 0;
             isCutsceneOn = true;
-            camAnim.SetBool("cutscene", true);
+            camAnim.SetBool("Cutscene", true);
             Invoke(nameof(StopCutscene), 2f);
         }
     }
@@ -23,7 +23,7 @@ public class startCutscene : MonoBehaviour
     {
         pc.playerSpeed = 10;
         isCutsceneOn = false;
-        camAnim.SetBool("cutscene", false);
+        camAnim.SetBool("Cutscene", false);
         Destroy(gameObject);
     }
 }
