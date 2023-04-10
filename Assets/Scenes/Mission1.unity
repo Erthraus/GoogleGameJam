@@ -1587,6 +1587,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1356964815498168563, guid: 9f441ab9b97c3664d8af558040e0e46d, type: 3}
+      propertyPath: pms
+      value: 
+      objectReference: {fileID: 8692747187890585565}
+    - target: {fileID: 1356964815498168563, guid: 9f441ab9b97c3664d8af558040e0e46d, type: 3}
+      propertyPath: DieMenuObj
+      value: 
+      objectReference: {fileID: 154636519}
+    - target: {fileID: 1356964815498168563, guid: 9f441ab9b97c3664d8af558040e0e46d, type: 3}
+      propertyPath: DarkMenuObj
+      value: 
+      objectReference: {fileID: 1909213591}
     - target: {fileID: 1356964815498168569, guid: 9f441ab9b97c3664d8af558040e0e46d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2376,6 +2388,11 @@ Transform:
   m_Father: {fileID: 341677464}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &711455522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8692747186355068169, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+  m_PrefabInstance: {fileID: 8692747187890585560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &736294041
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,7 +4413,6 @@ GameObject:
   - component: {fileID: 1703823377}
   - component: {fileID: 1703823376}
   - component: {fileID: 1703823375}
-  - component: {fileID: 1703823378}
   - component: {fileID: 1703823379}
   m_Layer: 6
   m_Name: Main Camera
@@ -4473,26 +4489,6 @@ Transform:
   m_Father: {fileID: 736294043}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703823378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703823374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c2028658c2d43f4eb18b6830b5aaacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DarkMenuObj: {fileID: 0}
-  SettingsMenuObj: {fileID: 0}
-  PauseMenuObj: {fileID: 1909213591}
-  DieMenuObj: {fileID: 0}
-  Paused: 0
-  isDead: 0
-  _scene:
-    m_Handle: 0
 --- !u!114 &1703823379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5864,3 +5860,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8692747186355068173, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
   m_PrefabInstance: {fileID: 8692747187890585560}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8692747187890585565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711455522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2028658c2d43f4eb18b6830b5aaacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DarkMenuObj: {fileID: 176623919055441196, guid: dee50168210e73f4ca6eb7b3338baec1, type: 3}
+  SettingsMenuObj: {fileID: 1950939540471620655, guid: 9aded3c45abd95044b9246741b87e007, type: 3}
+  PauseMenuObj: {fileID: 8692747186355068169, guid: 897c77e84cfd65147a505d4794335d16, type: 3}
+  DieMenuObj: {fileID: 154636519}
+  Paused: 0
+  isDead: 0
+  _scene:
+    m_Handle: 0

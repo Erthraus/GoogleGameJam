@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    //public PauseMenuScript pms;
+    /*public GameObject DarkMenuObj;
+    public GameObject DieMenuObj;*/
     public float maxHealth;
     public float alphaValue;
     public float hitTime;
@@ -99,6 +102,13 @@ public class PlayerHealth : MonoBehaviour
             {
                 AudioManager.instance.PlaySFX(1);
             }
+
+            /*Paused = true;
+            Time.timeScale = 0.0f;
+            DarkMenuObj.SetActive(true);
+            DieMenuObj.SetActive(true);*/
+
+            //pms.Paused = true;
         }
     }
     
