@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
+    public Transform playerTransform;
+    private Animator _animator;
+    private float Distance;
     public float maxHealth;
     public float BossDestroyTime;
     float currentHealth;
@@ -19,11 +22,15 @@ public class BossHealth : MonoBehaviour
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         bosscollider = GetComponent<BoxCollider2D>();
+        _animator = GetComponent<Animator>();
        
     }
     private void Update()
     {
         CheckisDead();
+        Distance = Vector2.Distance(playerTransform.position, transform.position);
+        _animator.SetFloat("Distance", Distance);
+        //Debug.Log(Distance);
     }
 
     public void TakeDamage(float damage)
