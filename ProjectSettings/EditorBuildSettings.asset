@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene Select Menu.unity
     guid: 9e947526b4422144b98946f0e4ab3a20
+  - enabled: 1
+    path: Assets/Scenes/Mission1.unity
+    guid: 6f3b3abfd57e0e24e961082e76228c8a
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
