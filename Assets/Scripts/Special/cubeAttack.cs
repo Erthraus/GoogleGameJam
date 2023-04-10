@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class cubeAttack : MonoBehaviour
 {
-    /*    public GameObject cubePrefab;
 
-        public void CreateNewCube()
-        {
-            Instantiate(cubePrefab);
-        }
-    */
+    public float DestroyTime;
 
  [SerializeField] GameObject cubePrefab;
 
@@ -21,5 +16,13 @@ public class cubeAttack : MonoBehaviour
             Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             GameObject g = Instantiate(cubePrefab, (Vector2)spawnPosition, Quaternion.identity);
         }
+
+        
     }
+
+   /* IEnumerator DestroyCube()
+    {
+        yield return new WaitForSeconds(DestroyTime);
+        Destroy(GameObject.FindGameObjectWithTag(tagToDestroy);)
+    }*/
 }
