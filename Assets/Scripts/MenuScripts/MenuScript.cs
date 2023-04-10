@@ -32,7 +32,7 @@ public class MenuScript : MonoBehaviour
 
     public void NewProjectButton()
     {
-        SceneManager.LoadScene("In-Game");
+        SceneManager.LoadScene("Mission1");
     }
 
     public void SceneSelectButton()
