@@ -30,7 +30,7 @@ public class BossHealth : MonoBehaviour
         CheckisDead();
         Distance = Vector2.Distance(playerTransform.position, transform.position);
         _animator.SetFloat("Distance", Distance);
-        Debug.Log(Distance);
+        //Debug.Log(Distance);
     }
 
     public void TakeDamage(float damage)
